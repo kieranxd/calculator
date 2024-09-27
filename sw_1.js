@@ -5,7 +5,7 @@ self.addEventListener("install", e => {
         caches.open("static").then(cache => {
             return cache.addAll([
                 "./",
-                "./manifest.json",
+                "./src/manifest.json",
                 "./xd.png"
             ]);
         })
